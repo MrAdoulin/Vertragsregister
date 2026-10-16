@@ -59,7 +59,7 @@ Die Umsetzungsideen haben drei Arten von Herkunft:
 ## B. Wünsche, die noch nicht gebaut sind
 
 ### O5 · Tabellen: Auto-Zoom und Knöpfe + / − (M14, P6.2)
-- **Wunsch Nico:** In allen Tabellen standardmäßig ein Auto-Zoom, der möglichst alle Inhalte zeigt. Dazu + und − zum Vergrößern und Verkleinern.
+- **Wunsch Ersteller:** In allen Tabellen standardmäßig ein Auto-Zoom, der möglichst alle Inhalte zeigt. Dazu + und − zum Vergrößern und Verkleinern.
 - **Gedacht (mein Vorschlag, nicht besprochen):**
   - Je Raster zwei kleine Knöpfe „−“ und „+“ rechts über dem Raster.
   - Sie ändern `FontHeight` des Rastermodells um ±1 pt (Bereich 8–14). `RowHeight` passt sich proportional an.
@@ -81,7 +81,7 @@ Die Umsetzungsideen haben drei Arten von Herkunft:
 
 ### O7 · Schriftgröße einstellbar, Vollbild zeigt mehr (M17, P6.4)
 - **Wunsch:** Die normale Schriftgröße steht in den Einstellungen. Im Vollbild wird die Schrift nicht größer; man sieht **mehr** statt einer vergrößerten 1:1-Kopie.
-- **Mit Nico besprochen (D5):** Das ist ein eigener Umbau mit Versuch, nach den anderen Paketen.
+- **Mit Ersteller besprochen (D5):** Das ist ein eigener Umbau mit Versuch, nach den anderen Paketen.
 - **Gedacht:**
   - Heute wächst die Seite mit dem Fenster und der Zoom „Seitenbreite exakt“ vergrößert alles.
   - Neu: Der Zoom bleibt fest. Er ergibt sich aus der eingestellten Schriftgröße, z. B. 100 % = 10,5 pt.
@@ -96,7 +96,7 @@ Die Umsetzungsideen haben drei Arten von Herkunft:
   - Je Zustand der Sicht `V_Leistung` (Spalte `Anzeige`, z. B. „Fällig am …“, „überfällig“, „Rechnung prüfen“) einen Satz mit Feld und Ort.
   - Beispiel: „Fällig am 01.11.26 – Termin mit dem Partner vereinbaren; erbracht: Knopf ‚Heute erbracht‘.“
   - Ort im Code: `AnzeigeTipp` in `schema.py` (V_Leistung) und `LeistungTodo` in `app/19_hinweis.bas`.
-  - Die Texte Nico zur Abnahme vorlegen (P1.9).
+  - Die Texte Ersteller zur Abnahme vorlegen (P1.9).
 
 ### O9 · Einstellungen verdichten (M8)
 - **Erledigt:** Die Anzeige-Einstellungen stehen jetzt in der Karte „Beispieldaten und Anzeige“.
@@ -118,7 +118,7 @@ Die Umsetzungsideen haben drei Arten von Herkunft:
 
 ---
 
-## C. Entscheidungen, die Nico noch treffen sollte
+## C. Entscheidungen, die Ersteller noch treffen sollte
 
 ### O10 · „unbenannt N“ (SPR-01)
 - **Stand:** Verträge ohne Nummer heißen „unbenannt 12“. Das steht im DB-Trigger (`schema.py`), in den Beispieldaten, in den Ablageordnern und in 6 Tests.
@@ -156,7 +156,7 @@ Die Umsetzungsideen haben drei Arten von Herkunft:
 
 ## F. Pflege und Vereinfachung (O16)
 
-- Analyse „nicht tragende Workarounds“ [GESAGT: Nico 16.10.]. Kandidaten:
+- Analyse „nicht tragende Workarounds“ [GESAGT: Ersteller 16.10.]. Kandidaten:
   - `LageHerstellen`: Ursache der Formverschiebung beim Laden suchen, statt sie zu reparieren.
   - Doppelte Aufrufe von `LeistenAus`/`LeistenWeg`.
   - Die vielen `Spaeter`-Codes.
